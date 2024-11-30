@@ -4,7 +4,8 @@
   "manifest_version": 3,
   "description": "Search for tabs using GenAI technology.",
   "trial_tokens": [
-    "AlbnUKZl2oA5buAZDttiS0gr1KavZ3wZ6XL04i4uS8gYiNfyWLrTj+In+BSj5iQPX/xuwl1DAH3vPB8bhLulQAkAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vY2dvZmpiZGVpZGdlb2NscGlmZGxjY2VkcGphZWtkbmMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"
+    "AlbnUKZl2oA5buAZDttiS0gr1KavZ3wZ6XL04i4uS8gYiNfyWLrTj+In+BSj5iQPX/xuwl1DAH3vPB8bhLulQAkAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vY2dvZmpiZGVpZGdlb2NscGlmZGxjY2VkcGphZWtkbmMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9",
+    "Aodo/5h9mK/dOTxqG2FHXIfv7X+CDVBcQVVAd3ZHQbcbnPQ38+3XXyil7xTqzDMM6GPBztqUoGVhY4IynWTaCgAAAABzeyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vY2dvZmpiZGVpZGdlb2NscGlmZGxjY2VkcGphZWtkbmMiLCJmZWF0dXJlIjoiQUlTdW1tYXJpemF0aW9uQVBJIiwiZXhwaXJ5IjoxNzUzMTQyNDAwfQ=="
   ],
   "background": {
     "service_worker": "background.js"
@@ -21,6 +22,6 @@
       "48": "images/icon48.png",
       "128": "images/icon128.png"
     },
-    "default_title": "Generate a summary"
+    "default_title": "Search for tabs"
   }
 }
