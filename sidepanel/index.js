@@ -10,19 +10,6 @@ let pageContent = '';
 
 const summaryElement = document.body.querySelector('#summary');
 const warningElement = document.body.querySelector('#warning');
-const summaryTypeSelect = document.querySelector('#type');
-const summaryFormatSelect = document.querySelector('#format');
-const summaryLengthSelect = document.querySelector('#length');
-
-function onConfigChange() {
-  const oldContent = pageContent;
-  pageContent = '';
-  onContentChange(oldContent);
-}
-
-[summaryTypeSelect, summaryFormatSelect, summaryLengthSelect].forEach((e) =>
-  e.addEventListener('change', onConfigChange)
-);
 
 chrome.storage.session.get('pageContent', ({ pageContent }) => {
   onContentChange(pageContent);
@@ -60,9 +47,9 @@ async function generateSummary(text) {
   try {
     const session = await createSummarizer(
       {
-        type: summaryTypeSelect.value,
-        format: summaryFormatSelect.value,
-        length: length.value
+        type: "tl;dr",
+        format: "markdown",
+        length: "long"
       },
       (message, progress) => {
         console.log(`${message} (${progress.loaded}/${progress.total})`);
